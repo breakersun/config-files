@@ -14,6 +14,8 @@ Plug 'tpope/vim-fugitive'
 Plug 'itchyny/lightline.vim'
 
 Plug 'luochen1990/rainbow'
+
+Plug 'prettier/vim-prettier', { 'do': 'yarn install --frozen-lockfile --production' }
 call plug#end()
 
 let mapleader = " "
