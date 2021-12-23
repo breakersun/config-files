@@ -23,6 +23,7 @@ Plug 'prettier/vim-prettier', { 'do': 'yarn install --frozen-lockfile --producti
 Plug 'preservim/nerdcommenter'
 
 Plug 'ryanoasis/vim-devicons'
+Plug 'ggandor/lightspeed.nvim'
 
 call plug#end()
 
