@@ -55,8 +55,6 @@ Set-PSReadLineOption -PredictionSource HistoryAndPlugin
 
 # sunlong prediction with listview
 Set-PSReadLineOption -PredictionViewStyle ListView
-#Import-Module Az.Tools.Predictor
-Set-PSReadLineOption -PredictionSource HistoryAndPlugin
 
 # sunlong for psfzf key-bindings
 Set-PsFzfOption -PSReadlineChordProvider 'Ctrl+f' -PSReadlineChordReverseHistory 'Ctrl+r'
