@@ -10,3 +10,9 @@ Plug 'junegunn/fzf.vim'
 Plug 'preservim/nerdtree'
 
 call plug#end()
+
+let mapleader = " "
+nnoremap <leader>pv :Vex<CR>
+nnoremap <leader>pf :Files<CR>
+inoremap jk <esc>:w<CR>
+nnoremap <C-p> :GFiles<CR>
