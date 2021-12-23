@@ -1,4 +1,5 @@
 set number
+set mouse=a
 
 call plug#begin('~/AppData/Local/nvim/plugged')
 
