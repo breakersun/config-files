@@ -1,5 +1,6 @@
 set number
 set mouse=a
+set clipboard+=unnamedplus
 
 call plug#begin('~/AppData/Local/nvim/plugged')
 
