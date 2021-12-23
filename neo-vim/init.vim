@@ -1,6 +1,7 @@
 set number
 set mouse=a
 set clipboard+=unnamedplus
+set encoding=UTF-8
 
 call plug#begin('~/AppData/Local/nvim/plugged')
 
@@ -20,6 +21,9 @@ Plug 'luochen1990/rainbow'
 Plug 'prettier/vim-prettier', { 'do': 'yarn install --frozen-lockfile --production' }
 
 Plug 'preservim/nerdcommenter'
+
+Plug 'ryanoasis/vim-devicons'
+
 call plug#end()
 
 let mapleader = " "
@@ -30,3 +34,4 @@ nnoremap <C-p> :GFiles<CR>
 
 "enable luochen1990/rainbow
 let g:rainbow_active = 1
+let g:airline_powerline_fonts = 1
