@@ -11,11 +11,15 @@ Plug 'preservim/nerdtree'
 
 Plug 'tpope/vim-fugitive'
 
-Plug 'itchyny/lightline.vim'
+"Plug 'itchyny/lightline.vim'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 
 Plug 'luochen1990/rainbow'
 
 Plug 'prettier/vim-prettier', { 'do': 'yarn install --frozen-lockfile --production' }
+
+Plug 'preservim/nerdcommenter'
 call plug#end()
 
 let mapleader = " "
