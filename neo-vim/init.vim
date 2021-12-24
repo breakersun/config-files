@@ -62,6 +62,6 @@ let g:rainbow_active = 1
 let g:airline_powerline_fonts = 1
 let g:NERDTreeWinPos = "right"
 
-let g:which_key_map =  {'pf' : 'FuzzyFiles', 'pv' : 'NERDTree' }
-let g:which_key_map.c = {'NERDComment' : '+NERDComment' }
+let g:which_key_map =  {'pf' : 'FuzzyFiles', 'pv' : 'NERDTree'}
+let g:which_key_map.c = {'name' : '+NERDComment' }
 call which_key#register('<Space>', "g:which_key_map")
