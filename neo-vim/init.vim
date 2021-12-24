@@ -2,8 +2,11 @@ set number
 set mouse=a
 set clipboard+=unnamedplus
 set encoding=UTF-8
+set nocompatible
 
 call plug#begin('~/AppData/Local/nvim/plugged')
+
+Plug 'sheerun/vim-polyglot'
 
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
@@ -40,6 +43,12 @@ inoremap <A-k> <Esc>:m .-2<CR>==gi
 vnoremap <A-j> :m '>+1<CR>gv=gv
 vnoremap <A-k> :m '<-2<CR>gv=gv
 
+nnoremap <leader>n :NERDTreeFocus<CR>
+nnoremap <C-n> :NERDTree<CR>
+nnoremap <C-t> :NERDTreeToggle<CR>
+nnoremap <C-f> :NERDTreeFind<CR>
+
 "enable luochen1990/rainbow
 let g:rainbow_active = 1
 let g:airline_powerline_fonts = 1
+let g:NERDTreeWinPos = "right"
