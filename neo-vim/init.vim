@@ -54,11 +54,14 @@ nnoremap <C-n> :NERDTree<CR>
 nnoremap <C-t> :NERDTreeToggle<CR>
 nnoremap <C-f> :NERDTreeFind<CR>
 
-let g:maplocalleader = ','
-nnoremap <silent> <leader>      :<c-u>WhichKey ' '<CR>
-nnoremap <silent> <localleader> :<c-u>WhichKey ','<CR>
+nnoremap <silent> <leader> :<c-u>WhichKey '<Space>'<CR>
+vnoremap <silent> <leader> :<c-u>WhichKeyVisual '<Space>'<CR>
 
 "enable luochen1990/rainbow
 let g:rainbow_active = 1
 let g:airline_powerline_fonts = 1
 let g:NERDTreeWinPos = "right"
+
+let g:which_key_map =  {'pf' : 'FuzzyFiles', 'pv' : 'NERDTree' }
+let g:which_key_map.c = {'NERDComment' : '+NERDComment' }
+call which_key#register('<Space>', "g:which_key_map")
