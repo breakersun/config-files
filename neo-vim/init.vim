@@ -28,25 +28,35 @@ Plug 'preservim/nerdcommenter'
 Plug 'ryanoasis/vim-devicons'
 Plug 'ggandor/lightspeed.nvim'
 
+Plug 'liuchengxu/vim-which-key'
+
+"Plug 'adi/vim-indent-rainbow'
 call plug#end()
 
-let mapleader = " "
+let mapleader = ' '
+
+"for fzf
 nnoremap <leader>pv :Vex<CR>
 nnoremap <leader>pf :Files<CR>
-inoremap jk <esc>:w<CR>
 nnoremap <C-p> :GFiles<CR>
-
+"quick save
+inoremap jk <esc>:w<CR>
+"dragging line 
 nnoremap <A-j> :m .+1<CR>==
 nnoremap <A-k> :m .-2<CR>==
 inoremap <A-j> <Esc>:m .+1<CR>==gi
 inoremap <A-k> <Esc>:m .-2<CR>==gi
 vnoremap <A-j> :m '>+1<CR>gv=gv
 vnoremap <A-k> :m '<-2<CR>gv=gv
-
+"for nerd tree file-browser
 nnoremap <leader>n :NERDTreeFocus<CR>
 nnoremap <C-n> :NERDTree<CR>
 nnoremap <C-t> :NERDTreeToggle<CR>
 nnoremap <C-f> :NERDTreeFind<CR>
+
+let g:maplocalleader = ','
+nnoremap <silent> <leader>      :<c-u>WhichKey ' '<CR>
+nnoremap <silent> <localleader> :<c-u>WhichKey ','<CR>
 
 "enable luochen1990/rainbow
 let g:rainbow_active = 1
